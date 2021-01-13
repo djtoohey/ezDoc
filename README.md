@@ -1,0 +1,2 @@
+# ezDoc
+Generator for KFCDoc
