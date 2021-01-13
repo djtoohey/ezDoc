@@ -86,8 +86,7 @@ ${cashTxt}
     
 ${wastageTxt}
     
-Have a good day
-    
+Have a good day,
 ${name.value}`;
 
     docField.value = doc;
