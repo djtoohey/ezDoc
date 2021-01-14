@@ -8,55 +8,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/kfcLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <h1>EzDoc</h1>
-    <a href="https://www.linkedin.com/in/declantoohey/" target="_blank"><img src="assets/logo.png"
-            alt="toohed-logo"></a>
+    <div class="container-fluid">
+        <h1>EzDoc</h1>
+        <a href="https://www.linkedin.com/in/declantoohey/" target="_blank"><img src="assets/logo.png"
+                alt="toohed-logo"></a>
+        <div id="input">
+            <div class="row">
+                <div class="col-3">
+                    <label for="name">Name:</label><br>
+                    <label for="sales">Sales:</label><br>
+                    <label for="salesTarget">Sales Difference:</label><br>
+                    <label for="labour">Labour:</label><br>
+                    <label for="labourTarget">Labour Difference:</label><br>
+                    <label for="customertx">CustomerTX:</label><br>
+                    <label for="customertxp">CustomerTX%:</label><br>
+                    <label for="cash">Cash:</label><br>
+                    <label for="wastage">Wastage:</label><br>
 
-    <div id="input">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"> <br><br>
+                </div>
+                <div class="col-3">
+                    <input type="text" id="name" name="name"><br>
+                    <input type="text" id="sales" name="sales"><br>
+                    <input type="text" id="salesTarget" name="salesTarget"><br>
+                    <input type="text" id="labour" name="labour"><br>
+                    <input type="text" id="labourTarget" name="labourTarget"><br>
+                    <input type="text" id="customertx" name="customertx"><br>
+                    <input type="text" id="customertxp" name="customertxp"><br>
+                    <input type="text" id="cash" name="cash"><br>
+                    <input type="text" id="wastage" name="wastage"><br>
 
-        <label for="sales">Sales:</label>
-        <input type="number" id="sales" name="sales"><br><br>
+                    <button id="submit">Generate</button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col">
 
-        <label for="salesTarget">Sales Difference:</label>
-        <input type="number" id="salesTarget" name="salesTarget"><br><br>
+                    <div id="output">
+                        <textarea readonly id="doc" cols="45" rows="16"></textarea><br>
+                        <button id="copy">Copy</button>
+                    </div>
 
-        <label for="labour">Labour:</label>
-        <input type="number" id="labour" name="labour"><br><br>
+                </div>
 
-        <label for="labourTarget">Labour Difference:</label>
-        <input type="number" id="labourTarget" name="labourTarget"><br><br>
 
-        <label for="customertx">CustomerTX:</label>
-        <input type="number" id="customertx" name="customertx"><br><br>
-        <label for="customertxp">CustomerTX %:</label>
-        <input type="number" id="customertxp" name="customertxp"><br><br>
+            </div>
 
-        <label for="cash">Cash:</label>
-        <input type="number" id="cash" name="cash"><br><br>
 
-        <label for="wastage">Wastage:</label>
-        <input type="number" id="wastage" name="wastage"><br><br>
 
-        <button id="submit">Generate</button> <br><br>
-    </div>
 
-    <br>
 
-    <div id="output">
-        <textarea readonly id="doc" rows="16" cols="50"></textarea><br>
-        <button id="copy">Copy</button>
-    </div>
-    <br><br>
-    <footer>
-        <p>Declan Toohey TOOHED&copy; </p>
-    </footer>
+            <br><br>
+            <footer>
+                <p>TOOHED&copy; <span>..</span></p>
+
+            </footer>
+        </div>
 </body>
 
 <script src="script.js"></script>
