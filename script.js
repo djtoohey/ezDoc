@@ -22,13 +22,13 @@ submitBtn.addEventListener("click", function () {
     dateStr = dateStr.slice(0, 15);
 
     // Sales
-    // Sales were $???, under target by $???
+    // Sales were $???, over/under target by $???
     let salesTxt = "";
     if (salesTarget.value > 0) {
         salesTxt = `Sales were $${sales.value}, over target by $${salesTarget.value}`;
     }
     else if (salesTarget.value < 0) {
-        salesTxt = `Sales were $${sales.value}, under target by $${salesTarget.value}`;
+        salesTxt = `Sales were $${sales.value}, under target by $${salesTarget.value * -1}`;
     }
     else {
         salesTxt = `Sales were $${sales.value}`;
@@ -36,13 +36,13 @@ submitBtn.addEventListener("click", function () {
 
 
     // Labour
-    // Labour was $???, under target by $???
+    // Labour was $???, over/under target by $???
     let labourTxt = "";
     if (labourTarget.value > 0) {
         labourTxt = `Labour was $${labour.value}, over target by $${labourTarget.value}`;
     }
     else if (labourTarget.value < 0) {
-        labourTxt = `Labour was $${labour.value}, under target by $${labourTarget.value}`;
+        labourTxt = `Labour was $${labour.value}, under target by $${labourTarget.value * -1}`;
     }
     else {
         labourTxt = `Labour was $${labour.value}`;
