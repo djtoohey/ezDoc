@@ -16,9 +16,12 @@ const copyBtn = document.getElementById("copy");
 
 submitBtn.addEventListener("click", function () {
     // Date
-    let date = new Date();
-    let dateStr = "";
-    dateStr = dateStr + date;
+    let todayDate = new Date();
+    let yesterdayDate = new Date(todayDate);
+
+    yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+
+    let dateStr = yesterdayDate.toDateString();
     dateStr = dateStr.slice(0, 15);
 
     // Sales
